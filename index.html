@@ -10,14 +10,42 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap"
       rel="stylesheet"
     />
-    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
   </head>
   <body>
-    <section class="formBody">
-      <img src="./Logo.svg" />
-      <input type="text" class="formBodyInput" placeholder="Name">
-      <div class="formBodyContainer">
-          <input type="email" class="formBodyContainer" placeholder="foo@bar.com">
+    <section class="container">
+      <img src="Logo.svg" />
+      <h2>Internal Sign Up</h2>
+      <div class="content">
+        <div class="name">
+          <p>Full Name*</p>
+          <input type="text" placeholder="Name" />
+        </div>
+        <div class="email">
+          <p>Email*</p>
+          <input type="email" placeholder="foo@bar.com" />
+        </div>
+        <div class="phone">
+          <p>Phone</p>
+          <input type="phone" placeholder="(83) 00000-0000" />
+        </div>
+        <div class="password">
+          <p>Password</p>
+          <input type="text" />
+        </div>
+        <div class="birthday">
+          <p>Birthday*</p>
+          <input type="date" />
+        </div>
+      </div>
+      <div class="containerSubmit">
+        <div class="containerSubmitCheckbox">
+          <input type="checkbox" id="checkbox" value="yes" />
+          <label for="checkbox">I accept the terms and privacy</label>
+        </div>
+        <button type="submit" class="containerSubmitButton">Register</Register</button>
+      </div>
     </section>
   </body>
 </html>

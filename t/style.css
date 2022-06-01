@@ -1,0 +1,128 @@
+body {
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.formBody {
+  background: #ffffff;
+  width: 88vh;
+  height: 95vh;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 20px;
+}
+section img {
+  align-self: center;
+  margin-top: 2em;
+}
+section h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.formBodyDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+}
+.formBodyDiv p {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  font-size: 0.8em;
+}
+.formBodyInput {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  width: 490px;
+  height: 25px;
+}
+.formBodyContainer {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  margin: 10px 0 10px 0;
+}
+
+.formBodyContainer p {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  font-size: 0.8em;
+}
+.formBodyContainers p {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.formBodyContainerInputEmail {
+  width: 330px;
+  margin-right: 7.5px;
+  height: 25px;
+}
+.formBodyContainerInputPhone {
+  width: 145px;
+  height: 25px;
+}
+.formBodySubmit {
+  font-family: "Nunito", sans-serif;
+}
+.formBodySubmit {
+  display: flex;
+}
+
+.formBodyContainerPassword {
+  width: 330px;
+  margin-right: 7.5px;
+  height: 25px;
+  border-radius: 5px solid 0.5;
+}
+.formBodyContainerDate {
+  width: 145px;
+  height: 28px;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+.formBodySubmit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.formBodySubmitButton {
+  height: 35px;
+  width: 70px;
+  border: none;
+  background: #0dbdbd;
+  border-radius: 8px;
+  color: #f9f9f9;
+}
+
+.formBodySubmitButton:hover {
+  cursor: pointer;
+  background: #009a9a;
+}
+
+@media (max-width: 650px) {
+  body {
+    background: white;
+  }
+  section img {
+    margin-top: 1em;
+  }
+  .formBodyContainer {
+    flex-direction: column;
+  }
+  .formBodyContainers {
+    order: -1;
+  }
+  .formBodySubmit {
+    margin-top: 0;
+  }
+}
