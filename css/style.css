@@ -107,33 +107,47 @@ body {
   body {
     background: white;
   }
+  .container {
+    width: 70vh;
+  }
   .container img {
     margin-top: 1em;
+    margin-left: 0;
   }
+  .name,
+  .email,
+  .password {
+    margin-left: 2.5em;
+  }
+  .name input,
   .email input,
   .password input {
-    width: 35em;
+    width: 23em;
   }
   .birthday {
     order: 2;
   }
   .phone {
     order: 1;
-    margin: 0 1em 1em 4em;
+    margin: 0 1.2em 1em 0;
+    margin-left: 2.5em;
   }
 
   .phone input,
   .birthday input {
-    width: 16.5em;
+    width: 10.5em;
   }
   .containerSubmit {
     margin-top: 0;
     flex-direction: column;
   }
 
+  .containerSubmitCheckbox {
+    margin-left: 3em;
+  }
   .containerSubmit button {
-    margin-left: 4.9em;
-    width: 85%;
+    margin-left: 3em;
+    width: 78%;
     margin-top: 1em;
   }
 }
