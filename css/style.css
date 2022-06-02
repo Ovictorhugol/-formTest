@@ -1,0 +1,153 @@
+body {
+  background: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95vh;
+  height: 90vh;
+  flex-wrap: wrap;
+  border-radius: 1.25em;
+}
+
+.container img {
+  margin-top: 2em;
+  max-width: 20em;
+}
+
+.container h2 {
+  font-family: "Inter", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.name p,
+.email p,
+.phone p,
+.password p,
+.birthday p {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8em;
+}
+
+.name input {
+  width: 35em;
+  height: 1.5em;
+}
+
+.name {
+  margin: 0 0 1em 4em;
+}
+.email input,
+.password input {
+  width: 25em;
+  height: 1.5em;
+}
+
+.email,
+.password {
+  margin: 0 1em 1em 4em;
+}
+
+.phone input {
+  width: 8.2em;
+  height: 1.5em;
+}
+
+.birthday input {
+  width: 8.2em;
+  height: 1.7em;
+}
+
+.containerSubmit {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-top: 3em;
+}
+
+.containerSubmitCheckbox {
+  display: flex;
+  align-items: center;
+  margin-left: 4.7em;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8em;
+}
+
+.containerSubmit button {
+  margin-right: 4.2em;
+  background: #0dbdbd;
+  border: none;
+  border-radius: 0.625em;
+  height: 2.5em;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8em;
+}
+
+.containerSubmit button:hover {
+  background: #018888;
+  cursor: pointer;
+}
+
+.containerSubmitCheckbox input {
+  accent-color: #0dbdbd;
+}
+
+@media (max-width: 650px) {
+  body {
+    background: white;
+  }
+  .container {
+    width: 70vh;
+  }
+  .container img {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+  .name,
+  .email,
+  .password {
+    margin-left: 2.5em;
+  }
+  .name input,
+  .email input,
+  .password input {
+    width: 23em;
+  }
+  .birthday {
+    order: 2;
+  }
+  .phone {
+    order: 1;
+    margin: 0 1.2em 1em 0;
+    margin-left: 2.5em;
+  }
+
+  .phone input,
+  .birthday input {
+    width: 10.5em;
+  }
+  .containerSubmit {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .containerSubmitCheckbox {
+    margin-left: 3em;
+  }
+  .containerSubmit button {
+    margin-left: 3em;
+    width: 78%;
+    margin-top: 1em;
+  }
+}
