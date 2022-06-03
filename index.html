@@ -14,50 +14,50 @@
     <title>Form</title>
   </head>
   <body id="root">
-    <section class="container" id="login">
+   <form id="form">
+    <section class="container" id="container">
       <div class="header">
         <img src="Logo.svg" />
         <h2>Internal Sign Up</h2>
       </div>
-      <form class="form" id="form">
-        <div class="content">
-          <div class="name">
-            <label for="name">Full Name*</label>
-            <input type="text" placeholder="Name" id="name" />
-          </div>
-          <div class="email">
-            <label for="email">Email*</label>
-            <input type="email" placeholder="foo@bar.com" id="email" />
-          </div>
-          <div class="phone">
-            <label for="phone">Phone</label>
-            <input type="phone" placeholder="(83) 00000-0000" id="phone" />
-          </div>
-          <div class="password">
-            <label for="password">Password</label>
-            <input type="password" id="password"  />
-          </div>
-          <div class="birthday">
-            <label for="date">Birthday*</label>
-            <input type="date" id="date" />
-          </div>
+      <div class="content">
+        <div class="name">
+          <label for="name">Full Name*</label>
+          <input type="text" placeholder="Name" id="name"/>
         </div>
-        <div class="containerSubmit">
-          <div class="containerSubmitCheckbox">
-            <input type="checkbox" id="checkbox" value="accept" />
-            <label for="checkbox">I accept the terms and privacy</label>
-          </div>
-          <button type="submit" id="submit" class="containerSubmitButton">Register</Register</button>
+        <div class="email">
+          <label for="email">Email*</label>
+          <input type="email" placeholder="foo@bar.com" id="email"/>
         </div>
-      </form>
+        <div class="phone">
+          <label for="phone">Phone</label>
+          <input type="phone" placeholder="(83) 00000-0000" id="phone" />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" id="password"/>
+        </div>
+        <div class="birthday">
+          <label for ="birthday">Birthday*</label>
+          <input type="date" id="birthday" />
+        </div>
+      </div>
+      <div class="containerSubmit">
+        <div class="containerSubmitCheckbox">
+          <input type="checkbox" id="checkbox" value="yes" />
+          <label for="checkbox">I accept the terms and privacy</label>
+        </div>
+        <button type="submit" class="containerSubmitButton">Register</Register</button>
+      </div>
     </section>
-      <form class="formSucces">
-      <section class="containerLogin" id="success">
-        <img src="Logo.svg" />
-        <h2>Success!</h2>
-        <button type="submit"  class="containerSubmitButton">Go Back!</Register</button>
-      </section>
-    </form>
+  </form>
+  <form class="formSuccess" id="formSuccess">
+    <section class="containerLogin" id="containerLogin" >
+      <img src="Logo.svg" />
+      <h2>Success!</h2>
+      <button type="submit" class="containerSubmitButton">Go Back!</Register</button>
+    </section>
+  </form>
     <script src="index.js"></script>
   </body>
-</html>
+</label
