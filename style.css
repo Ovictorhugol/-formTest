@@ -28,11 +28,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.name p,
-.email p,
-.phone p,
-.password p,
-.birthday p {
+.name label,
+.email label,
+.phone label,
+.password label,
+.birthday label {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 0.8em;
@@ -41,15 +41,24 @@ body {
 .name input {
   width: 35em;
   height: 1.5em;
+  margin-bottom: 1em;
 }
-
 .name {
   margin: 0 0 1em 4em;
+}
+.name,
+.email,
+.phone,
+.password,
+.birthday {
+  display: flex;
+  flex-direction: column;
 }
 .email input,
 .password input {
   width: 25em;
   height: 1.5em;
+  margin-bottom: 1em;
 }
 
 .email,
@@ -60,10 +69,12 @@ body {
 .phone input {
   width: 8.2em;
   height: 1.5em;
+  margin-bottom: 1em;
 }
 
 .birthday input {
   width: 8.2em;
+  margin-bottom: 1em;
   height: 1.7em;
 }
 
@@ -109,10 +120,14 @@ body {
   }
   .container {
     width: 70vh;
+    align-items: flex-start;
   }
   .container img {
     margin-top: 1em;
-    margin-left: 0;
+    margin-left: 5em;
+  }
+  .container h2 {
+    margin-left: 4em;
   }
   .name,
   .email,
@@ -147,7 +162,54 @@ body {
   }
   .containerSubmit button {
     margin-left: 3em;
-    width: 78%;
+    width: 25em;
     margin-top: 1em;
+  }
+}
+
+.containerLogin {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 70vh;
+  height: 80vh;
+  border-radius: 1.25em;
+}
+
+.containerLogin img {
+  margin-top: 3em;
+}
+
+.containerLogin h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 2em;
+}
+
+.containerLogin button {
+  background: #0dbdbd;
+  border: none;
+  border-radius: 0.625em;
+  height: 3em;
+  width: 5em;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.containerLogin button:hover {
+  background: #018888;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  body {
+    background: white;
+  }
+  .containerLogin button {
+    height: 2em;
+    width: 7em;
   }
 }
