@@ -28,14 +28,15 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.name p,
-.email p,
-.phone p,
-.password p,
-.birthday p {
+.name label,
+.email label,
+.phone label,
+.password label,
+.birthday label {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 0.8em;
+  display: flex;
 }
 
 .name input {
@@ -147,7 +148,54 @@ body {
   }
   .containerSubmit button {
     margin-left: 3em;
-    width: 78%;
+    width: 24.5em;
     margin-top: 1em;
+  }
+}
+
+.containerLogin {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 70vh;
+  height: 80vh;
+  border-radius: 1.25em;
+}
+
+.containerLogin img {
+  margin-top: 3em;
+}
+
+.containerLogin h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 2em;
+}
+
+.containerLogin button {
+  background: #0dbdbd;
+  border: none;
+  border-radius: 0.625em;
+  height: 3em;
+  width: 5em;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.containerLogin button:hover {
+  background: #018888;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  body {
+    background: white;
+  }
+  .containerLogin button {
+    height: 2em;
+    width: 7em;
   }
 }

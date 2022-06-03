@@ -14,31 +14,32 @@
     <title>Form</title>
   </head>
   <body id="root">
-    <section class="container">
+    <form id="form">
+    <section class="container" id="container">
       <div class="header">
         <img src="Logo.svg" />
         <h2>Internal Sign Up</h2>
       </div>
       <div class="content">
         <div class="name">
-          <p>Full Name*</p>
-          <input type="text" placeholder="Name" />
+          <label for="name">Full Name*</label>
+          <input type="text" placeholder="Name" id="name"/>
         </div>
         <div class="email">
-          <p>Email*</p>
-          <input type="email" placeholder="foo@bar.com" />
+          <label for="email">Email*</label>
+          <input type="email" placeholder="foo@bar.com" id="email"/>
         </div>
         <div class="phone">
-          <p>Phone</p>
-          <input type="phone" placeholder="(83) 00000-0000" />
+          <label for="phone">Phone</label>
+          <input type="phone" placeholder="(83) 00000-0000" id="phone" />
         </div>
         <div class="password">
-          <p>Password</p>
-          <input type="password" />
+          <label for="password">Password</label>
+          <input type="password" id="password"/>
         </div>
         <div class="birthday">
-          <p>Birthday*</p>
-          <input type="date" />
+          <label for ="birthday">Birthday*</label>
+          <input type="date" id="birthday" />
         </div>
       </div>
       <div class="containerSubmit">
@@ -49,6 +50,14 @@
         <button type="submit" class="containerSubmitButton">Register</Register</button>
       </div>
     </section>
+  </form>
+  <form class="formSuccess" id="formSuccess">
+    <section class="containerLogin" id="containerLogin" >
+      <img src="Logo.svg" />
+      <h2>Success!</h2>
+      <button type="submit" class="containerSubmitButton">Go Back!</Register</button>
+    </section>
+  </form>
     <script src="index.js"></script>
   </body>
-</html>
+</label
