@@ -4,6 +4,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
   document.getElementById("container").style.display = "none";
   document.getElementById("containerLogin").style.display = "flex";
 });
+
 document.querySelector("formSuccess").addEventListener("submit", (event) => {
   event.preventDefault();
 
