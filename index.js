@@ -5,8 +5,10 @@ document.querySelector("form").addEventListener("submit", (event) => {
   document.getElementById("containerLogin").style.display = "flex";
 });
 
-document.querySelector("formSuccess").addEventListener("submit", (event) => {
-  event.preventDefault();
+console.log();
+
+document.querySelector("formSuccess").addEventListener("submit", (e) => {
+  e.preventDefault();
 
   document.getElementById("containerLogin").style.display = "none";
   document.getElementById("container").style.display = "flex";
