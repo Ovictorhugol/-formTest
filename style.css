@@ -43,9 +43,45 @@ body {
   width: 35em;
   height: 1.5em;
 }
-
 .name {
   margin: 0 0 1em 4em;
+}
+.name,
+.email,
+.phone,
+.password,
+.birthday {
+  display: flex;
+  flex-direction: column;
+}
+.name p,
+.email p,
+.phone p,
+.password p,
+.birthday p {
+  margin: 0;
+  color: red;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.7em;
+  margin-top: 0.3em;
+}
+#nameInvalid {
+  display: none;
+}
+#emailInvalid {
+  display: none;
+}
+#phoneInvalid {
+  display: none;
+}
+#passwordInvalid {
+  display: none;
+}
+#ageInvalid {
+  display: none;
+}
+#checkboxInvalid {
+  display: none;
 }
 .email input,
 .password input {
@@ -74,6 +110,19 @@ body {
   justify-content: space-between;
   align-content: flex-end;
   margin-top: 3em;
+}
+.containerAccept {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerAccept p {
+  margin: 0;
+  color: red;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.7em;
+  margin-top: 0.3em;
+  margin-left: 5.8em;
 }
 
 .containerSubmitCheckbox {
@@ -110,15 +159,20 @@ body {
   }
   .container {
     width: 70vh;
+    align-items: flex-start;
   }
   .container img {
     margin-top: 1em;
-    margin-left: 0;
+    margin-left: 5em;
+  }
+  .container h2 {
+    margin-left: 4em;
   }
   .name,
   .email,
   .password {
     margin-left: 2.5em;
+    margin-bottom: 0.2em;
   }
   .name input,
   .email input,
