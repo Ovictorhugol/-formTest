@@ -1,9 +1,9 @@
 document.querySelector("form").addEventListener("submit", (event) => {
   getValues();
-  testValues();
-
-  // document.getElementById("container").style.display = "none";
-  // document.getElementById("containerLogin").style.display = "flex";
+  if (testValues() == true) {
+    document.getElementById("container").style.display = "none";
+    document.getElementById("containerLogin").style.display = "flex";
+  }
 
   event.preventDefault();
 });
@@ -33,36 +33,47 @@ function getValues() {
 }
 
 function testValues() {
+  var wrong = false;
   var regexName = /^[a-zA-Z]{4,}(?: +[a-zA-Z]{0,})$/;
-  if (!regexName.test(localStorage.getItem("name")))
+  if (!regexName.test(localStorage.getItem("name"))) {
     document.getElementById("nameInvalid").style.display = "flex";
-  else document.getElementById("nameInvalid").style.display = "none";
+    var wrong = true;
+  } else document.getElementById("nameInvalid").style.display = "none";
 
   var regexEmail = /[a-z.@0-9]/;
-  if (!regexEmail.test(localStorage.getItem("email")))
+  if (!regexEmail.test(localStorage.getItem("email"))) {
     document.getElementById("emailInvalid").style.display = "flex";
-  else document.getElementById("emailInvalid").style.display = "none";
-  var regexPhone = /[0-9]{1,11}/;
+    var wrong = true;
+  } else document.getElementById("emailInvalid").style.display = "none";
 
-  if (!regexPhone.test(localStorage.getItem("phone")))
+  var regexPhone = /[0-9]{1,11}/;
+  if (!regexPhone.test(localStorage.getItem("phone"))) {
     document.getElementById("phoneInvalid").style.display = "flex";
-  else document.getElementById("phoneInvalid").style.display = "none";
+    var wrong = true;
+  } else document.getElementById("phoneInvalid").style.display = "none";
 
   var regexPasswords = /^[0-9]{6,9}$/;
-
-  if (!regexPasswords.test(localStorage.getItem("password")))
+  if (!regexPasswords.test(localStorage.getItem("password"))) {
     document.getElementById("passwordInvalid").style.display = "flex";
-  else document.getElementById("passwordInvalid").style.display = "none";
+    var wrong = true;
+  } else document.getElementById("passwordInvalid").style.display = "none";
 
   var regexBirthday = /^\d{4}-\d{1,2}-\d{1,2}$/;
-
-  if (!regexBirthday.test(localStorage.getItem("birthday")))
+  if (!regexBirthday.test(localStorage.getItem("birthday"))) {
     document.getElementById("ageInvalid").style.display = "flex";
-  else document.getElementById("ageInvalid").style.display = "none";
+    var wrong = true;
+  } else document.getElementById("ageInvalid").style.display = "none";
 
   if (!document.querySelector("#checkbox").checked) {
     document.getElementById("checkboxInvalid").style.display = "flex";
+    var wrong = true;
   } else document.getElementById("checkboxInvalid").style.display = "none";
+
+  if (wrong == true) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 function maskPhone() {
