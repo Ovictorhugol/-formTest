@@ -63,7 +63,7 @@ body {
   color: red;
   font-family: "Nunito", sans-serif;
   font-size: 0.7em;
-  margin-top: 0.3em;
+  margin-top: 0.1em;
 }
 #nameInvalid {
   display: none;
