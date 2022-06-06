@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" type="image/x-icon" href="Logo.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Test</title>
+  </head>
+  <body id="root">
+   <form id="form">
+    <section class="container" id="container">
+      <div class="header">
+        <img src="Logo.svg" />
+        <h2>Internal Sign Up</h2>
+      </div>
+      <div class="content">
+        <div class="name">
+          <label for="name">Full Name*</label>
+          <input type="text" placeholder="Name" id="name"/>
+          <p id="nameInvalid">Fullname invalid</p>
+        </div>
+        <div class="email">
+          <label for="email">Email*</label>
+          <input type="email" placeholder="foo@bar.com" id="email"/>
+          <p id="emailInvalid">Email invalid</p>
+        </div>
+        <div class="phone">
+          <label for="phone">Phone</label>
+          <input type="phone" placeholder="(83)00000-0000" id="phone" maxlength="11" onfocusout="maskPhone()"/>
+          <p id="phoneInvalid">Phone invalid</p>
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" id="password"/>
+          <p id="passwordInvalid">Password invalid</p>
+        </div>
+        <div class="birthday">
+          <label for ="birthday">Birthday*</label>
+          <input type="date" id="birthday" maxlength="8" />
+          <p id="ageInvalid">Age invalid</p>
+        </div>
+      </div>
+      <div class="containerSubmit">
+        <div class="containerAccept">
+        <div class="containerSubmitCheckbox">
+          <input type="checkbox" id="checkbox" value="yes" />
+          <label for="checkbox">I accept the terms and privacy</label>
+        </div>
+        <p id="checkboxInvalid">You must accept the terms</p>
+      </div>
+
+        <button type="submit" class="containerSubmitButton">Register</Register</button>
+      </div>
+    </section>
+  </form>
+  <form class="formSuccess" id="formSuccess">
+    <section class="containerLogin" id="containerLogin" >
+      <img src="Logo.svg" />
+      <h2>Success!</h2>
+      <button type="submit" class="containerSubmitButton">Go Back!</Register</button>
+    </section>
+  </form>
+    <script src="index.js"></script>
+  </body>
+</label
